@@ -1,0 +1,104 @@
+.backgroundGreeting {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #D7FFEC 91.39%);
+}
+
+.leftSide{
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+.backgroundCircle {
+    z-index: 0;
+    position: absolute;
+    height: 90vh;
+    left: -150px;
+    top: -50px;
+}
+
+.profilePic {
+    z-index: 1;
+    position: relative;
+    left: 90px;
+    height: 70vh;
+    top: 30vh;
+}
+
+.rightSide {
+    margin-right: 8%;
+    color: #57E8A2;
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.greetingIntro {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30%;
+    margin-top: 20vh;
+    display: flex;
+    font-size: 2.8em;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+.textFrontendDev {
+    margin-left: 30%;
+    width: 32vw;
+}
+
+.horizontalLine {
+    margin-left: 32%;
+    font-size: 1.3em;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        height: 34vh;
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10vh;
+    right: 8%;
+
+    img {
+        margin-top: 16px;
+    }
+}
+
+.circleBottom {
+    width: 98vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+        margin-bottom: -10vh;
+        height: 20vh;
+    }
+
+    // margin-bottom: -10px;
+
+}

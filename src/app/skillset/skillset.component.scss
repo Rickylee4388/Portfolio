@@ -1,0 +1,45 @@
+.skillSetDiv {
+    height: 54vh;
+    background: linear-gradient(128.95deg, #57E8A2 32.52%, #33B476 104.12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    
+
+}
+
+.textSkillset {
+    height: 16%;
+}
+
+.icons {
+    margin-top: 8%;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 70px;
+            width: 70px;
+            margin-bottom: 15%;
+        }
+        span{
+            font-family: 'Montserrat',sans-serif;   
+            text-align: center;
+            min-width: 80px;
+            max-width: 80px;
+            color: white;
+        }
+    }
+}

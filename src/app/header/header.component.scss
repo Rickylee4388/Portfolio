@@ -1,0 +1,31 @@
+.header {
+    // background-color: lightgreen;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 117px;
+    position: absolute;
+    top: 0;
+
+    img {
+        margin-left: 8%;
+        height: 10vh;
+    }
+}
+
+.menu {
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1em;
+        margin-left: 50px;
+        text-decoration: none;
+        color: #57E8A2;
+    }
+
+}

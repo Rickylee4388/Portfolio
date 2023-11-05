@@ -1,0 +1,54 @@
+.introMainDiv {
+    height: 70vh;
+    display: flex;
+}
+
+.introLeftDiv {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    padding: 8%;
+
+    img {
+        width: 32vw;
+    }
+}
+
+.introCircleImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+
+}
+
+.introRightDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50vw;
+
+    img {
+        height: 10vh;
+    }
+
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 1.3em;
+        margin-top: 10%;
+        background-color: white;
+        border: 2px solid #57E8A2;
+        color: #57E8A2;
+        width: 52%;
+        height: 12%;
+        border-radius: 10px;
+    }
+}

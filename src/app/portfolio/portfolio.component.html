@@ -1,0 +1,42 @@
+<div class="portfolioDiv">
+    <div class="circle">
+        <img class="circlLeftBig" src="../../assets/img/greenCircle.png" alt="">
+        <div class="circleDiv">
+            <img class="circleRightBig" src="../../assets/img/greenCircle.png" alt="">
+            <img class="circlLeftSmall" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+        <div class="circleDiv">
+            <img class="circlLeftMiddle" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+        <div class="circleDiv">
+            <img class="circleRightSmall" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+        <div class="circleDiv">
+            <img class="circleCenter" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+    </div>
+
+
+    <div *ngFor="let project of portfolioComponents; let i = index">
+        <div class="project" *ngIf="i % 2 == 0">
+                <img class="projectImg" src="{{project.image}}" alt="">
+            <div class="portfolioTextandButtonDiv rightTxt">
+                <h1>{{project.title}}</h1>
+                <span class="languages">{{project.languages}}</span>
+                <span>{{project.description}}</span>
+                <button class="button">Github</button>
+            </div>
+        </div>
+
+        <div class="project" *ngIf="i % 2 != 0">
+            <div class="portfolioTextandButtonDiv leftTxt">
+                <h1>{{project.title}}</h1>
+                <span class="languages">{{project.languages}}</span>
+                <span>{{project.description}}</span>
+                <button class="leftBtn button">Github</button>
+            </div>
+                <img class="projectImg" src="{{project.image}}" alt="">
+        </div>
+    </div>
+
+</div>

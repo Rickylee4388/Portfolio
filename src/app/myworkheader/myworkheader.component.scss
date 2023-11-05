@@ -1,0 +1,45 @@
+.myWorkDiv {
+    padding-left: 8%;
+    padding-top: 6%;
+    height: 30vh;
+}
+
+.myWorkText {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+        width: 30vw;
+    }
+
+    span {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 4%;
+        width: 50%;
+    }
+}
+
+.smallCircle {
+    position: relative;
+    top: 0;
+
+    img {
+        height: 88px;
+        position: absolute;
+        left: 36%;
+        top: -40px;
+    }
+}
+
+.bigCircle {
+    position: relative;
+    top: 0;
+
+    img {
+        height: 150px;
+        position: absolute;
+        right: 8%;
+        top: 14vh;
+    }
+}
