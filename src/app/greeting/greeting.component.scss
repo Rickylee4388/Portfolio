@@ -25,9 +25,9 @@
 .profilePic {
     z-index: 1;
     position: relative;
-    left: 90px;
-    height: 70vh;
-    top: 30vh;
+    left: -50px;
+    height: 77vh;
+    top: 23vh;
 }
 
 .rightSide {
@@ -84,6 +84,7 @@
 }
 
 .circleBottom {
+    z-index: 2;
     width: 98vw;
     height: 100vh;
     position: absolute;

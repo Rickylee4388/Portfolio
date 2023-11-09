@@ -11,6 +11,10 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { MyworkheaderComponent } from './myworkheader/myworkheader.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactformComponent } from './contactform/contactform.component';
+import { FormsModule }   from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,16 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     IntroductionComponent,
     SkillsetComponent,
     MyworkheaderComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent,
+    ContactformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
