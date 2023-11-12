@@ -21,11 +21,18 @@
     align-items: center;
 
     a {
+        z-index: 3;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1em;
         margin-left: 50px;
         text-decoration: none;
         color: #57E8A2;
+        cursor: pointer;
+        &:hover{
+            font-weight: bold;
+        }
     }
+
+
 
 }

@@ -1,0 +1,65 @@
+.footerDiv {
+    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #57E8A2 51.56%, #33B476 100%);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+    padding-top: 8%;
+    padding-bottom: 4%;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+    }
+}
+
+.logo {
+    width: 20%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: flex-start;
+
+    // align-items: center;
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+.nameImprint {
+    color: white;
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    // justify-content: center;
+
+
+}
+
+.icons {
+    width: 20%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: flex-end;
+    // align-items: center;
+
+    img {
+        margin-left: 8%;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.upperDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}

@@ -1,7 +1,19 @@
-<form (submit)="sendMail()" #myForm>
-<input required type="text" name="name" #nameField>
-<input required type="email" name="email" #emailField>
-<textarea required type="text" name="message" #messageField></textarea>
-<button #sendButton>Say hello ;&#41;</button>
+<form class="formDiv" (submit)="sendMail()" #myForm>
+    <input class="nameField inputDiv" placeholder="Your name" required type="text" name="name" #nameField>
+    <input class="emailField inputDiv" placeholder="Your email" required type="email" name="email" #emailField>
+    <textarea class="messageField inputDiv" placeholder="Your message" required type="text" name="message" #messageField></textarea>
+    <div class="policy">
+        <div class="checkbox">
+            <label for="AGB">
+                <input formControlName="checkboxInput" name="checkbox" required id="AGB" type="checkbox">
+            </label>
+        </div>
+        <div>
+            <span>I've read the </span>
+            <a routerLink="/imprint/" href="">privacy policy</a>
+            <span> and agree to the processing of my data as outlined.</span>
+        </div>
+    </div>
+    <button class="buttonField" #sendButton>Say hello ;&#41;</button>
 
 </form>

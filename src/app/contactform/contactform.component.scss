@@ -1,0 +1,112 @@
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputDiv {
+    -webkit-box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 1px solid #57E8A2;
+    width: 100%;
+    margin-bottom: 4vh;
+    border-radius: 10px
+}
+
+.checkBoxDiv {
+    display: flex;
+}
+
+.nameField {
+    height: 6vh;
+}
+
+.emailField {
+    height: 6vh;
+}
+
+.messageField {
+    margin-bottom: 12px;
+    max-width: 100%;
+    max-height: 50vh;
+    height: 24vh;
+}
+
+.buttonField {}
+
+
+.policy {
+    width: 100%;
+    z-index: 10;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    line-height: 0.5;
+    padding-bottom: 50px;
+
+    span {
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+        line-height: 1.5;
+    }
+    a {
+
+        font-size: 13px;
+        color: #00BC8F;
+        text-decoration: none;
+    }
+}
+
+.checkbox {
+    margin-right: 10px;
+    z-index: 10;
+
+    input {
+        background: transparent;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+.checkbox input:before {
+    content: '';
+    background: transparent;
+    background-image: url('../../assets/img/check_box_outline_blank.png');
+    background-size: cover;
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox input:checked:before {
+    content: '';
+    background: white;
+    background-image: url('../../assets/img/check_box.png');
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    border: 0px solid #70E61C;
+}
+
+.buttonField {
+    width: 32%;
+    height: 7vh;
+    font-family: Montserrat;
+    font-size: 1.3em;
+    color: rgba(187, 187, 187, 1);
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(187, 187, 187, 1);
+}
