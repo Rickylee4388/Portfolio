@@ -62,3 +62,15 @@ h3 {
 .background {
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #D7FFEC 91.39%);
 }
+
+.upBtn{
+    width: 39px;
+    height: 39px;
+    position: relative;
+    bottom: -15px;
+    background-image: url('../../assets/img/upBtnGrren.png');
+    cursor: pointer;
+    &:hover{
+        background-image: url('../../assets/img/upBtnWhite.png');
+    }
+}

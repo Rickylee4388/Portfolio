@@ -72,6 +72,7 @@
 }
 
 .icons {
+    
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -79,7 +80,31 @@
     right: 8%;
 
     img {
+        cursor: pointer;
         margin-top: 16px;
+        animation: 0.25s moveIconBack ease-in-out;
+        transform: translateX(0px);
+        &:hover{
+            animation: 0.25s moveIcon ease-in-out;
+            transform: translateX(-10px);
+        }
+    }
+}
+
+@keyframes moveIcon {
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(-10px)
+    }
+}
+@keyframes moveIconBack {
+    from{
+        transform: translateX(-10px)
+    }
+    to{
+        transform: translateX(0px)
     }
 }
 
@@ -103,3 +128,4 @@
     // margin-bottom: -10px;
 
 }
+

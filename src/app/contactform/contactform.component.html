@@ -1,11 +1,18 @@
 <form class="formDiv" (submit)="sendMail()" #myForm>
-    <input class="nameField inputDiv" placeholder="Your name" required type="text" name="name" #nameField>
-    <input class="emailField inputDiv" placeholder="Your email" required type="email" name="email" #emailField>
-    <textarea class="messageField inputDiv" placeholder="Your message" required type="text" name="message" #messageField></textarea>
+    <input (click)="showErrorMsg('names')" id="names" class="nameField inputDiv" placeholder="Your name" required type="text" name="name" #nameField [(ngModel)]="name">
+    
+    <div id="nameRequired" class="d-none errorMessage" #nameRequired>Please insert your name</div>
+    <input (click)="showErrorMsg('emails')" id="emails" class="emailField inputDiv" placeholder="Your email" required type="email" name="email" #emailField [(ngModel)]="email">
+    
+    <div id="emailRequired" class="d-none errorMessage" #emailRequired>Please insert your email</div>
+    <textarea (click)="showErrorMsg('messages')" id="messages" class="messageField inputDiv" placeholder="Your message" required type="text" name="message" #messageField ></textarea>
+    
+    <div id="messageRequired" class="d-none errorMessage" #messageRequired>Please insert your message</div>
+
     <div class="policy">
         <div class="checkbox">
             <label for="AGB">
-                <input formControlName="checkboxInput" name="checkbox" required id="AGB" type="checkbox">
+                <input formControlName="checkboxInput" name="checkbox" required id="AGB" type="checkbox" (change)="doSomething($event)"  (click)="showErrorMsg('AGB')" >
             </label>
         </div>
         <div>
@@ -14,6 +21,7 @@
             <span> and agree to the processing of my data as outlined.</span>
         </div>
     </div>
-    <button class="buttonField" #sendButton>Say hello ;&#41;</button>
+    <div id="checkBoxRequired" class="d-none errorMessage" #checkBoxRequired>Please accept the privacy policy</div>
+    <button disabled class="buttonField" #sendButton>Say hello ;&#41;</button>
 
 </form>

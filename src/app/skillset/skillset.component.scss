@@ -9,7 +9,7 @@
     padding-right: 8%;
     padding-top: 6%;
     padding-bottom: 8%;
-    
+
 
 }
 
@@ -23,23 +23,58 @@
     height: 20%;
     display: flex;
     justify-content: space-between;
-    
-    div{
+
+    div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img{
+        &:hover {
+            img{
+                animation: 0.25s moveIcon ease-in-out;
+                transform: translateY(-10px);
+            }
+            span{
+                font-weight: 700;
+            }
+        }
+
+        img {
             height: 70px;
             width: 70px;
             margin-bottom: 15%;
+            animation: 0.25s moveIconBack ease-in-out;
+            transform: translateY(0px);
         }
-        span{
-            font-family: 'Montserrat',sans-serif;   
+
+        span {
+            font-family: 'Montserrat', sans-serif;
             text-align: center;
             min-width: 80px;
             max-width: 80px;
             color: white;
         }
+    }
+}
+
+
+
+@keyframes moveIcon {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes moveIconBack {
+    from {
+        transform: translateY(-10px)
+    }
+
+    to {
+        transform: translateY(0px)
     }
 }

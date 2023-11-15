@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  constructor() { }
+  
+  scrollToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }

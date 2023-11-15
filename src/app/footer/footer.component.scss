@@ -13,6 +13,33 @@
         text-decoration: none;
         color: white;
         font-size: 1.2em;
+        // text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+        // transition: text-decoration-color 300ms;
+
+        display: inline-block;
+        position: relative;
+
+        // color: #0087ca;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 10%;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        &:hover{
+            font-weight: 600;
+        }
     }
 }
 
@@ -24,10 +51,10 @@
 
     // align-items: center;
     img {
+        cursor: pointer;
         width: 70px;
         height: 70px;
     }
-
 }
 
 .nameImprint {
@@ -37,9 +64,6 @@
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    // justify-content: center;
-
-
 }
 
 .icons {
@@ -47,12 +71,19 @@
     margin-right: 8%;
     display: flex;
     justify-content: flex-end;
-    // align-items: center;
 
     img {
+        cursor: pointer;
         margin-left: 8%;
         width: 36px;
         height: 36px;
+        transform: scale(1);
+        animation: iconSmall 0.25s ease-in-out;
+
+        &:hover {
+            animation: icon 0.25s ease-in-out;
+            transform: scale(1.25);
+        }
     }
 }
 
@@ -61,5 +92,26 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
 
+
+//KEYFRAMES
+@keyframes icon {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes iconSmall {
+    from {
+        transform: scale(1.25);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
