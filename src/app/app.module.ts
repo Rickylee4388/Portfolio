@@ -15,6 +15,14 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactformComponent } from './contactform/contactform.component';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ResGreetingComponent } from './res-greeting/res-greeting.component';
+import { ResHeaderComponent } from './res-header/res-header.component';
+import { ResContactComponent } from './res-contact/res-contact.component';
+import { ResFooterComponent } from './res-footer/res-footer.component';
+import { ResIntroductionComponent } from './res-introduction/res-introduction.component';
+import { ResMyworkheaderComponent } from './res-myworkheader/res-myworkheader.component';
+import { ResPortfolioComponent } from './res-portfolio/res-portfolio.component';
+import { ResSkillsetComponent } from './res-skillset/res-skillset.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyworkheaderComponent,
     PortfolioComponent,
     ContactComponent,
-    ContactformComponent
+    ContactformComponent,
+    ResGreetingComponent,
+    ResHeaderComponent,
+    ResContactComponent,
+    ResFooterComponent,
+    ResIntroductionComponent,
+    ResMyworkheaderComponent,
+    ResPortfolioComponent,
+    ResSkillsetComponent
   ],
   imports: [
     BrowserModule,

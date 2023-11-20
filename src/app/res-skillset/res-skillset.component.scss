@@ -1,0 +1,95 @@
+.skillSetDiv {
+    height: 95vh;
+    background: linear-gradient(128.95deg, #57E8A2 32.52%, #33B476 104.12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+.textSkillset {
+    height: 16%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.icons {
+    margin-top: 8%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    div {
+        margin: 2.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            img {
+                animation: 0.25s moveIcon ease-in-out;
+                transform: translateY(-10px);
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        img {
+            height: 70px;
+            width: 70px;
+            margin-bottom: 15%;
+            animation: 0.25s moveIconBack ease-in-out;
+            transform: translateY(0px);
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            min-width: 80px;
+            max-width: 80px;
+            color: white;
+        }
+    }
+}
+
+
+
+@keyframes moveIcon {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes moveIconBack {
+    from {
+        transform: translateY(-10px)
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .skillSetDiv {
+        height: 125vh;
+    }
+}

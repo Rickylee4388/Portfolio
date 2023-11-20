@@ -1,0 +1,17 @@
+.responsive{
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {
+    .monitor{
+        display: none;
+    }
+    .responsive{
+        display: block;
+    }
+  }

@@ -1,0 +1,75 @@
+.d-none {
+    display: none;
+}
+
+.header {
+    // background-color: lightgreen;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    position: absolute;
+    top: 0;
+}
+
+.header-div {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header-overlay{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #D7FFEC 91.39%);
+
+    img{
+        margin-left: 5%;
+    }
+}
+
+.menu-res {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        z-index: 3;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
+        margin-top: 5vh;
+        text-decoration: none;
+        color: #57E8A2;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.greenLogoDiv{
+    z-index: 1;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 117px;
+    position: absolute;
+    top: 0;
+}

@@ -74,3 +74,9 @@ h3 {
         background-image: url('../../assets/img/upBtnWhite.png');
     }
 }
+
+@media screen and (max-height: 325px) {
+    .contactDiv{
+        height: 85vh;
+    }
+}

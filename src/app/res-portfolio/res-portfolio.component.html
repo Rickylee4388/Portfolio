@@ -1,0 +1,33 @@
+<div class="portfolioDiv">
+    <div class="circle">
+        <img class="circlLeftBig" src="../../assets/img/greenCircle.png" alt="">
+        <div class="circleDiv">
+            <img class="circlLeftSmall" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+        <div class="circleDiv">
+            <img class="circleCenter" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+        <div class="circleDiv">
+            <img class="circlebottom" src="../../assets/img/greenCircle.png" alt="">
+        </div>
+    </div>
+
+
+    <div *ngFor="let project of portfolioComponents; let i = index" class="contentDiv">
+        <div class="project-responsive">
+            <img class="projectImg" src="{{project.image}}" alt="">
+            <div class="portfolioTextandButtonDiv rightTxt">
+                <h1>{{project.title}}</h1>
+                <span class="languages">{{project.languages}}</span>
+                <span>{{project.description}}</span>
+                <div class="buttons">
+                    <button class="button">Live Test</button>
+                    <button class="button">Github</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,74 @@
+.background {
+    width: 100%;
+    margin-top: 8vh;
+    overflow: hidden;
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #D7FFEC 91.39%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactDiv {
+    width: 90%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 10vh;
+    gap: 5vh;
+}
+
+
+.rightCircle {
+    z-index: 0;
+    position: absolute;
+    height: 20vh;
+    margin-left: 45%;
+    margin-top: 43vh;
+}
+
+.circleLeft {
+    position: absolute;
+    width: 16%;
+    margin-left: 67%;
+    margin-top: 92vh;
+}
+
+h1 {
+    margin-top: 7%;
+    width: 90%;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    color: rgba(87, 232, 162, 1);
+}
+
+h3 {
+    color: rgba(87, 232, 162, 1);
+    font-size: 1.6em;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+.contactDescription {
+    font-size: 1.3em;
+    width: 100%;
+    font-family: Montserrat;
+}
+
+.contactME {
+    color: rgba(87, 232, 162, 1);
+}
+
+
+
+.upBtn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.contactform{
+    z-index: 2;
+}
+

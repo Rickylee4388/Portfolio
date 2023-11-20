@@ -94,9 +94,11 @@ export class ContactformComponent implements OnInit {
 
     if(messageField.value != ''&& emailField.value != ''&&nameField.value != ''&& this.isChecked == false){
       sendButton.disabled = false;
+      sendButton.classList.add('greenButton');
     }
     else{
       sendButton.disabled = true;
+      sendButton.classList.remove('greenButton');
     }
   }
 isChecked:any=false;
@@ -169,12 +171,14 @@ isChecked:any=false;
     nameField.disabled = true;
     emailField.disabled = true;
     sendButton.disabled = true;
+    sendButton.classList.remove('greenButton');
   }
 
   enableFields(nameField: any, emailField: any, messageField: any, sendButton: any) {
     messageField.disabled = false;
     nameField.disabled = false;
     emailField.disabled = false;
-    sendButton.disabled = false;
+    // sendButton.disabled = false;
   }
+  
 }

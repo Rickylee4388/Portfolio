@@ -37,7 +37,8 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
-        &:hover{
+
+        &:hover {
             font-weight: 600;
         }
     }
@@ -113,5 +114,23 @@
 
     to {
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* STYLES HERE */
+
+    .nameImprint {
+        div {
+            text-align: center;
+        }
+
+    }
+}
+
+
+@media screen and (max-height: 325px) {
+    .footerDiv {
+        height: 30vh;
     }
 }

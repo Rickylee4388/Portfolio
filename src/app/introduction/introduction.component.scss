@@ -65,3 +65,20 @@
         }
     }
 }
+
+@media screen and (max-height: 420px) {
+    .introMainDiv {
+        height: 100vh;
+    }
+
+    .introRightDiv {
+        span {
+            font-size: 1.0em;
+        }
+
+        button {
+            font-size: 1.0em;
+            width: 65%;;
+        }
+    }
+}
