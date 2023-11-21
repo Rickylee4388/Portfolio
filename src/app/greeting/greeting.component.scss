@@ -147,3 +147,20 @@
         width: 28vw;
     }
 }
+
+@media screen and (max-width: 930px) {
+    .profilePic {
+        z-index: 1;
+        position: relative;
+        left: -86px;
+        height: 65vh;
+        top: 35vh;
+    }
+    .backgroundCircle {
+        z-index: 0;
+        position: absolute;
+        height: 90vh;
+        left: -261px;
+        top: -50px;
+    }
+    }

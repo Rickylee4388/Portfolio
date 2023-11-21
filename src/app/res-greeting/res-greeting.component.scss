@@ -30,17 +30,19 @@
     font-size: 1.7em;
 }
 
-.textDiv{
+.textDiv {
     margin-top: 24vh;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.textFrontendDev{
+
+.textFrontendDev {
     z-index: 1;
     width: 100%;
 }
+
 .greetingheadline {
     width: 60%;
     display: flex;
@@ -73,5 +75,19 @@
         height: 20vh;
     }
 
+}
+
+@media screen and (min-width: 510px) {
+    .backgroundCircle {
+        z-index: 0;
+        position: absolute;
+        height: 90vh;
+        left: -150px;
+        top: -50px;
+    }
+
+    .textFrontendDev {
+        width: 75%;
+    }
 }
 
