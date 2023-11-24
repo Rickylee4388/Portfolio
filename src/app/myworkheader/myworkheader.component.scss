@@ -2,6 +2,7 @@
     padding-left: 8%;
     padding-top: 6%;
     height: 30vh;
+    max-height: 250px;
 }
 
 .myWorkText {
@@ -11,7 +12,7 @@
     height: 100%;
 
     img {
-        width: 30vw;
+        width: 30%;
     }
 
     span {
@@ -34,6 +35,7 @@
 }
 
 .bigCircle {
+    overflow: hidden;
     position: relative;
     top: 0;
 

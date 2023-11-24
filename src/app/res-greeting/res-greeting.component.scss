@@ -1,25 +1,28 @@
 .backgroundGreeting {
+    position: relative;
     height: 100vh;
     width: 100%;
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #D7FFEC 91.39%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: end;
+    overflow-x: clip;
 }
 
 .backgroundCircle {
     z-index: 0;
     position: absolute;
-    right: 0;
-    height: 100vh;
-    top: 0px;
+    height: 90vh;
+    left: -30%;
+    top: -4%;
 }
+
 
 .profilePic {
     z-index: 1;
     height: 52vh;
+    overflow: hidden;
 }
 
 
@@ -40,7 +43,7 @@
 
 .textFrontendDev {
     z-index: 1;
-    width: 100%;
+    width: 65%;
 }
 
 .greetingheadline {
@@ -60,7 +63,7 @@
 
 .circleBottom {
     z-index: 2;
-    width: 98vw;
+    width: 98%;
     margin-top: 90vh;
     position: absolute;
     top: 0;
@@ -77,17 +80,31 @@
 
 }
 
-@media screen and (min-width: 510px) {
+@media screen and (max-width: 500px) {
     .backgroundCircle {
         z-index: 0;
         position: absolute;
         height: 90vh;
-        left: -150px;
-        top: -50px;
+        left: -60%;
+        top: -10%;
     }
 
     .textFrontendDev {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .backgroundCircle {
+        z-index: 0;
+        position: absolute;
+        height: 90vh;
+        left: -100%;
+        top: -5%;
+    }
+
+    .textFrontendDev {
+        width: 55%;
     }
 }
 

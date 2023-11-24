@@ -1,37 +1,78 @@
 .header {
-    // background-color: lightgreen;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
     z-index: 1;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 117px;
+    top: 0px;
     position: absolute;
-    top: 0;
+    max-width: 1420px;
 
     img {
         cursor: pointer;
-        margin-left: 8%;
         height: 10vh;
     }
 }
 
 .menu {
-    margin-right: 8%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 50%;
 
     a {
+        text-align: end;
+        width: 25%;
         z-index: 3;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.1em;
-        margin-left: 50px;
+        font-size: 1.2em;
+        margin-left: 30px;
         text-decoration: none;
         color: #57E8A2;
         cursor: pointer;
-        &:hover{
+        transform: scale(1);
+        animation: aBack 0.25s ease-in-out;
+
+        &::after {
             font-weight: bold;
+            display: block;
+            content: attr(title);
+            height: 1px;
+            color: transparent;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        &:hover {
+            animation: icon 0.25s ease-in-out;
+            transform: scale(1.25);
+            font-weight: bold;
+            
         }
     }
 }
 
+@keyframes a {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.25);
+        font-weight: bold;
+    }
+}
+
+@keyframes aBack {
+    from {
+        transform: scale(1.25);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

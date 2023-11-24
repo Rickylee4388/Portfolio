@@ -1,24 +1,31 @@
 <div id="greeting" class="backgroundGreeting">
+    <div class="backgroundCircle">
+        <img src="assets/img/greenCircle.png" alt="">
+    </div>
     <div class="leftSide">
-        <img class="backgroundCircle" src="assets/img/greenCircle.png" alt="">
         <img class="profilePic" src="assets/img/Bewerbungsfoto.png" alt="">
     </div>
     <div class="rightSide">
-        <div class="greetingIntro">Hello! I am Denise</div>
-        <img class="textFrontendDev" src="assets/img/TextFrontenddev.png" alt="">
-        <div class="horizontalLine">
-            <div >SCROLL</div>
-            <img  src="assets/img/GreenLine.png" alt="">
+        <div class="upperSideRight">
+            <div class="greetingIntro">Hello! I am Denise</div>
+            <img class="textFrontendDev" src="assets/img/TextFrontenddev.png" alt="">
+        </div>
+
+        <div class="bottomSideRight">
+            <div class="horizontalLine">
+                <div>SCROLL</div>
+                <img src="assets/img/GreenLine.png" alt="">
+            </div>
+            <div class="icons">
+                <img src="assets/img/gitIcon.png" alt="" (click)="openLink('https://github.com/Rickylee4388')">
+                <a href="#contact"><img src="assets/img/mailIcon.png" alt=""></a>
+                <img src="assets/img/linkedinIcon.png" alt=""
+                    (click)="openLink('https://www.linkedin.com/in/denise-schmidt-6a8604253/')">
+            </div>
         </div>
     </div>
-    <div class="icons">
-        <img src="assets/img/gitIcon.png" alt="">
-        <img src="assets/img/mailIcon.png" alt="">
-        <img src="assets/img/linkedinIcon.png" alt="">
-    </div>
-    <div class="circleBottom" >
+
+    <div class="circleBottom">
         <img src="assets/img/greenCircle.png" alt="">
     </div>
-    
-
 </div>

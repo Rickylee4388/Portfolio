@@ -10,15 +10,21 @@
         </div>
     </div>
 
-
     <div *ngFor="let project of portfolioComponents; let i = index">
         <div class="project" *ngIf="i % 2 == 0">
-                <img class="projectImg" src="{{project.image}}" alt="">
+            <div class="heightImg">
+                <img class="projectImg" src="{{project.image}}" alt="" (click)="openLink(project.linkLiveTest)">
+            </div>
+                
             <div class="portfolioTextandButtonDiv rightTxt">
                 <h1>{{project.title}}</h1>
                 <span class="languages">{{project.languages}}</span>
                 <span>{{project.description}}</span>
-                <button class="button">Github</button>
+                <div class="leftBtn buttons">
+                    <button class="button" (click)="openLink(project.linkGitHub)">Github</button>
+                    <button class="button" (click)="openLink(project.linkLiveTest)">Live Test</button>
+                </div>
+                
             </div>
         </div>
 
@@ -27,21 +33,19 @@
                 <h1>{{project.title}}</h1>
                 <span class="languages">{{project.languages}}</span>
                 <span>{{project.description}}</span>
-                <button class="leftBtn button">Github</button>
+
+                <div class="buttons">
+                    <button class="button" (click)="openLink(project.linkGitHub)">Github</button>
+                    <button class="button" (click)="openLink(project.linkLiveTest)">Live Test</button>
+                </div>
+
+                <!-- <button class="leftBtn button" (click)="openLink(project.linkGitHub)">Github</button> -->
             </div>
-                <img class="projectImg" src="{{project.image}}" alt="">
+            <div class="heightImg">
+                <img class="projectImg"  src="{{project.image}}" alt="" (click)="openLink(project.linkLiveTest)">
+            </div>
+                
         </div>
-
-        <div class="project-responsive" >
-            <img class="projectImg" src="{{project.image}}" alt="">
-        <div class="portfolioTextandButtonDiv rightTxt">
-            <h1>{{project.title}}</h1>
-            <span class="languages">{{project.languages}}</span>
-            <span>{{project.description}}</span>
-            <button class="button">Github</button>
-        </div>
-    </div>
-
     </div>
 
 </div>

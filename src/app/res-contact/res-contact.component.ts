@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class ResContactComponent {
   constructor() { }
   
+
+  /**
+   * scrolls to top of the page
+   */
   scrollToTop() {
     window.scroll({
       top: 0,

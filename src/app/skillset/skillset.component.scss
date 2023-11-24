@@ -27,12 +27,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         &:hover {
-            img{
+            img {
                 animation: 0.25s moveIcon ease-in-out;
                 transform: translateY(-10px);
             }
-            span{
+
+            span {
                 font-weight: 700;
             }
         }
@@ -80,5 +82,16 @@
 @media screen and (max-height: 325px) {
     .skillSetDiv {
         height: 115vh;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .icons {
+        div {
+            img {
+                height: 50px;
+                width: 50px;  
+            }
+        }
     }
 }

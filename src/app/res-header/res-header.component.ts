@@ -10,10 +10,19 @@ export class ResHeaderComponent implements OnInit {
 
   constructor() { }
 
+
+  /**
+   * opens menu overlay
+   */
   menuSlide() {
     let menuOverlay = this.menuOverlay.nativeElement;
     menuOverlay.classList.remove('d-none');
   }
+
+
+  /**
+   * hides menu overlay
+   */
   menuSlideOff() {
     let menuOverlay = this.menuOverlay.nativeElement;
     menuOverlay.classList.add('d-none');

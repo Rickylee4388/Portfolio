@@ -11,23 +11,18 @@
             <img class="circlebottom" src="assets/img/greenCircle.png" alt="">
         </div>
     </div>
-
-
     <div *ngFor="let project of portfolioComponents; let i = index" class="contentDiv">
         <div class="project-responsive">
-            <img class="projectImg" src="{{project.image}}" alt="">
+            <img class="projectImg" src="{{project.image}}" alt="" (click)="openLink(project.linkLiveTest)">
             <div class="portfolioTextandButtonDiv rightTxt">
                 <h1>{{project.title}}</h1>
                 <span class="languages">{{project.languages}}</span>
                 <span>{{project.description}}</span>
                 <div class="buttons">
-                    <button class="button">Live Test</button>
-                    <button class="button">Github</button>
+                    <button class="button" (click)="openLink(project.linkLiveTest)">Live Test</button>
+                    <button class="button" (click)="openLink(project.linkGitHub)">Github</button>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 </div>

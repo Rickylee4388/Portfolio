@@ -1,3 +1,6 @@
+.d-none{
+    display: none;
+}
 .footerDiv {
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #57E8A2 51.56%, #33B476 100%);
     height: 35vh;
@@ -9,7 +12,7 @@
     padding-top: 8%;
     padding-bottom: 4%;
 
-    a {
+    .imprint {
         text-decoration: none;
         color: white;
         font-size: 1.2em;
@@ -41,7 +44,7 @@
 }
 
 .logo {
-    width: 20%;
+  
     display: flex;
     justify-content: flex-start;
 
@@ -88,7 +91,27 @@
     align-items: center;
     margin-bottom: 3vh;
 }
+.mail{
+    text-decoration: none;
+}
 
+.imprintApp{
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: block;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    h1{
+        margin-top: 8vh;
+    }
+}
 
 //KEYFRAMES
 @keyframes icon {

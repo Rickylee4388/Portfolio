@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class GreetingComponent {
 
+
+  /**
+   * open external link in new tab
+   * @param link external link
+   */
+  openLink(link: string){
+    window.open(link, "_blank");
+  }
 }

@@ -8,11 +8,30 @@
 
         </div>
         <div class="icons">
-            <img src="assets/img/gitIconWhite.png" alt="">
-            <img src="assets/img/mailIconWhite.png" alt="">
-            <img src="assets/img/linkedInIconWhite.png" alt="">
+            <img src="assets/img/gitIconWhite.png" alt="" (click)="openLink('https://github.com/Rickylee4388')">
+            <a class="mail" href="#contact"><img src="assets/img/mailIconWhite.png"alt=""></a>
+            <img src="assets/img/linkedInIconWhite.png" alt="" (click)="openLink('https://www.linkedin.com/in/denise-schmidt-6a8604253/')">
         </div>
     </div>
-
-    <a href="">Imprint</a>
+    <a class="imprint" (click)='openImprint()'>Imprint</a>
+</div>
+<div class="d-none" #imprintApp>
+    <div class="imprintApp">
+        <h1>Impressum</h1>
+        <h2 id="m46">Diensteanbieter</h2>
+        <p>Denise Schmidt</p>
+        <p>Erftstraße 29</p>
+        <p>41517</p>
+        <p>Deutschland</p>
+        <h2 id="m56">Kontaktmöglichkeiten</h2>E-Mail-Adresse: <p><a
+                href="mailto:d.schmidt1988@web.de">d.schmidt1988@web.de</a></p>
+        Telefon: <p>+491632791409</p>
+        <p class="seal">
+            <a href="https://datenschutz-generator.de/"
+                title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
+                rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
+                Schwenke</a>
+        </p>
+        <button (click)="closeImprint()">Schließen</button>
+    </div>
 </div>

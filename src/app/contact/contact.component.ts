@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   constructor() { }
+
   
+  /**
+   * scrolls to top of the page
+   */
   scrollToTop() {
     window.scroll({
       top: 0,

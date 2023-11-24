@@ -43,7 +43,7 @@ import { ResSkillsetComponent } from './res-skillset/res-skillset.component';
     ResIntroductionComponent,
     ResMyworkheaderComponent,
     ResPortfolioComponent,
-    ResSkillsetComponent
+    ResSkillsetComponent,
   ],
   imports: [
     BrowserModule,
